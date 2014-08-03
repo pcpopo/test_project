@@ -19,9 +19,15 @@ class Intro extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+        $this->introduce();
 	}
+    
+    public function introduce(){
+        $this->load->view('welcome_message');
+    }
 }
 
 /* End of file intro.php */
 /* Location: ./application/controllers/intro.php */
+
+?>
